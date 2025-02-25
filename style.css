@@ -1,0 +1,75 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background:linear-gradient(0deg, #222831, #393e46);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container{
+    background-color: #393e46;
+    text-align: center;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.game-board{
+    display: grid;
+    grid-template-columns: repeat(3, 150px);
+    grid-gap:10px;
+    margin-bottom: 20px;
+/* 
+    display: flex;
+    width: 470px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px; */
+    
+}
+
+.cell{
+    width: 150px;
+    height: 150px;
+    font-size: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #00adb5;
+    cursor: pointer;
+    transition: 300ms all;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.cell:hover{
+    background-color: #222831;
+}
+
+.message{
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.restart-button{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 200ms all;
+}
+
+.restart-button:hover{
+    background-color: #2c74c0;
+}
+
+.win {
+    background-color: green;
+}
